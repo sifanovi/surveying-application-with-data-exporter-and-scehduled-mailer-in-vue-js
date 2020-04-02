@@ -1,32 +1,28 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div class="container" id="app">
+    <b-navbar variant="faded" type="light">
+      <b-navbar-brand href="#">
+        <img src="./assets/images/saxmundham_logo.jpg" class="nav-logo" alt="Kitten">
+      </b-navbar-brand>
+      <b-navbar-nav class="ml-auto">
+        <b-navbar-brand href="#">
+          <img src="./assets/images/smartMed.png" class="nav-logo" alt="Kitten">
+        </b-navbar-brand>
+      </b-navbar-nav>
+    </b-navbar>
+    <!-- ROUTER VIEW -->
     <router-view/>
+    <!-- ROUTER VIEW -->
+    <div>
+      <b-navbar variant="faded" type="light" class="pb-5 pt-5 justify-content-center">
+        <small>&copy; SmartMed Technologies Ltd 2020.  All rights reserved. </small>
+      </b-navbar>
+    </div>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<style lang="scss" scoped>
+  .nav-logo{
+    height: 50px;
   }
-}
 </style>

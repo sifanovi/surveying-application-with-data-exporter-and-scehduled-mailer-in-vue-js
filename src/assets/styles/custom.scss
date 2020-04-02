@@ -1,0 +1,14 @@
+@import './variableOverride.scss';
+
+
+
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+.alert {
+  border: none;
+  border-left: solid $alert-left-border-width ;
+}
+.card {
+  box-shadow: 2px 2px 3px #000;
+}
